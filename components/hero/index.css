@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     gap: 96px;
-    background-color: #ADC89D;
+    background-color: var(--green-200);
 }
 
 .hero__illu {
@@ -23,11 +23,11 @@
     width: 574px;
     font-size: 36px;
     text-transform: uppercase;
-    color: white;
+    color: var(--white);
 }
 
 .hero__content__title strong {
-    color: #3E5B3C;
+    color: var(--green-500);
 }
 
 .hero__content__card {
@@ -37,7 +37,7 @@
     flex-direction: column;
     gap: 32px;
     border-radius: 16px;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .hero__content__card__title {
@@ -54,10 +54,10 @@
 .hero__content__card__link {
     padding: 12px 24px;
     width: fit-content;
-    background-color: #3E5B3C;
+    background-color: var(--green-500);
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #ffffff;
+    color: var(--white);
     border-radius: 12px;
 }
