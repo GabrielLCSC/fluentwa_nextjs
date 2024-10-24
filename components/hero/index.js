@@ -29,6 +29,7 @@ export default function Hero() {
                     src="/images/illu_hero.png"
                     width={521}
                     height={648}
+                    priority={true}
                     alt='illu_hero'
                     />
         </div>

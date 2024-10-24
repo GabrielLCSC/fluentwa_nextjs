@@ -7,9 +7,22 @@
     background-color: var(--green-200);
 }
 
+@media (max-width:768px) {
+    .hero {
+        padding-top: 124px;
+    }
+}
+
 .hero__illu {
+    display: flex;
     width: 400px;
     height: 100%;
+}
+
+@media (max-width: 1100px) {
+    .hero__illu {
+        display: none;
+    }
 }
 
 .hero__content {
@@ -19,11 +32,36 @@
     gap: 30px;
 }
 
+@media (max-width: 1100px) {
+    .hero__content {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__content {
+        width: 88%;
+    }
+}
+
 .hero__content__title {
     width: 574px;
     font-size: 36px;
     text-transform: uppercase;
     color: var(--white);
+}
+
+@media (max-width: 1100px) {
+    .hero__content__title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__content__title {
+        width: 100%;
+        font-size: 28px;
+    }
 }
 
 .hero__content__title strong {
@@ -40,15 +78,52 @@
     background-color: var(--white);
 }
 
+@media (max-width: 1100px) {
+    .hero__content__card {
+        padding: 32px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__content__card {
+        width: 100%;
+    }
+}
+
 .hero__content__card__title {
     font-size: 40px;
     font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+    .hero__content__card__title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__content__card__title {
+        font-size: 24px;
+    }
 }
 
 .hero__content__card__text {
     font-size: 24px;
     font-weight: 300;
     line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+    .hero__content__card__text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__content__card__text {
+        font-size: 18px;
+    }
 }
 
 .hero__content__card__link {
