@@ -1,0 +1,132 @@
+/* Styles par défaut */
+.navbar {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 54px;
+    background-color: var(--white);
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    z-index: 10; /* Pour que la navbar soit toujours au-dessus */
+}
+
+/* Navbar fixée après scroll */
+.navbar--scrolled {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: var(--white);
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.088);
+    z-index: 10;
+}
+
+/* Styles pour la partie gauche (liens) */
+.navbar__left-side {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1100px) {
+    .navbar__left-side__link-logo {
+        height: 30px;
+    }
+}
+
+.navbar__logo {
+    margin-right: 40px;
+}
+
+@media (max-width: 1100px) {
+    .navbar__logo {
+        margin-right: 0;
+        width: 35px;
+        height: 100%;
+    }
+}
+
+.navbar__links {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+}
+
+/* Partie droite (bouton et flag) */
+.navbar__right-side {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.navbar__right-side__cta {
+    color: var(--white);
+    padding: 12px 24px;
+    background-color: var(--pink-200);
+    border-radius: 30px;
+}
+
+/* Menu mobile caché par défaut */
+.navbar--mobile {
+    display: none;
+}
+
+/* Bouton d'icône pour mobile */
+.navbar__mobile-icon {
+    display: none;
+    height: 30px;
+}
+
+/* Styles pour les écrans de moins de 1100px */
+@media (max-width: 1100px) {
+    .navbar {
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);  
+        position: fixed; /* La navbar reste fixée au scroll même sur mobile */
+        top: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        padding: 12px 20px;
+        z-index: 10;
+    }
+
+    .navbar__links, .navbar__right-side {
+        display: none; /* Cacher les liens et le CTA */
+    }
+
+    .navbar__mobile-icon {
+        display: block; /* Afficher le bouton d'icône */
+        background: none;
+        border: none;
+    }
+
+    .navbar__mobile-icon img {
+        width: 25px;
+        height: 100%;
+    }
+
+    .navbar--mobile {
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        background-color: var(--white);
+        padding: 20px;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 9;
+    }
+
+    .navbar--mobile a {
+        font-size: 18px;
+    }
+}

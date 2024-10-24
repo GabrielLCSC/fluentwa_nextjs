@@ -1,3 +1,17 @@
+:root {
+  /* colors */
+  --white: #ffffff;
+  --green-500: #3E5B3C;
+  --green-200: #ADC89D;
+  --pink-500: #B56E74;
+  --pink-200: #D9B1B9;
+
+  /* sizes */
+  --mobile: 768px;
+  --tablet: 1024px;
+  --desktop: 1280px;
+}
+
 html,
 body {
   max-width: 100vw;
